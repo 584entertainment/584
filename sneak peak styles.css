@@ -1,29 +1,166 @@
-/* Pop-Up Background Overlay */
-#email-popup {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Pop-Up Content Centering */
-.popup-content {
-    background: #ffffff;
-    padding: 30px;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
+body {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers form content horizontally */
+    align-items: center;
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
     position: relative;
 }
 
+.hero-content {
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #ffdd57;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#hero button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #3333cc;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #ffdd57;
+}
+
+/* About the Book Section */
+#about-book {
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin: 40px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#about-book h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 20px;
+}
+
+/* Key Chapters Overview */
+#chapters-overview {
+    max-width: 800px;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chapter h3 {
+    font-size: 1.5rem;
+    color: #3333cc;
+}
+
+.chapter p {
+    font-size: 1.1rem;
+    color: #555555;
+}
+
+/* Testimonials Section */
+#testimonials {
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-left: 5px solid #3333cc;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #3333cc;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+    margin: 20px 0;
+}
+
+cite {
+    display: block;
+    font-size: 1rem;
+    color: #777777;
+}
+
+/* Purchase Section */
+#purchase {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#purchase h2 {
+    font-size: 2rem;
+    color: #3333cc;
+}
+
+.purchase-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff6b6b;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-button:hover {
+    background-color: #ff4e4e;
+}
