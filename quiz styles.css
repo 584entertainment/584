@@ -1,3 +1,4 @@
+/* Reset and Fonts */
 * {
     margin: 0;
     padding: 0;
@@ -6,52 +7,119 @@
 }
 
 body {
-    background-color: #f4f4f9;
+    background-color: #f0f4f8; /* Light blue background for contrast */
     color: #333;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
-#landing h1, #results h2 {
-    font-size: 2rem;
-    color: #0073e6;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: #00509e; /* Darker blue color for text */
 }
 
-#landing p {
+header h1 {
+    font-size: 2.5rem;
+    color: #00509e;
+}
+
+header p {
     font-size: 1.2rem;
-    margin: 20px 0;
+    color: #333;
+    margin-top: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
+/* Form Styling */
+form {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 80, 158, 0.1); /* Subtle shadow for depth */
     margin-top: 20px;
 }
 
-form {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Question Styling */
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9fafb; /* Soft background color for each question */
+    border-left: 5px solid #00509e; /* Accent border */
+    border-radius: 5px;
 }
 
 .question p {
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #00509e;
+    font-size: 1.1rem;
 }
 
 label {
     display: block;
-    margin: 5px 0;
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #e0e7ff; /* Light blue for label background */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-#results-message {
-    font-size: 1.2rem;
+label:hover {
+    background-color: #c1d3ff; /* Darker blue on hover */
+}
+
+/* Radio Input Styling */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+button {
+    display: inline-block;
+    padding: 12px 20px;
     margin-top: 20px;
+    background-color: #00509e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0070e0; /* Slightly lighter blue on hover */
+}
+
+/* Results Section */
+#results {
+    max-width: 600px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 80, 158, 0.1); /* Same shadow style */
+    text-align: center;
+}
+
+#results h2 {
+    font-size: 2rem;
+    color: #00509e;
+    margin-bottom: 15px;
+}
+
+#results p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+footer {
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #777;
 }
