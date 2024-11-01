@@ -2,7 +2,7 @@ function calculateScore(event) {
     event.preventDefault();
 
     let score = 0;
-    const questions = 1; // Update based on total questions
+    const questions = 5; // Update based on total questions
 
     for (let i = 1; i <= questions; i++) {
         const answer = document.querySelector(`input[name="q${i}"]:checked`);
