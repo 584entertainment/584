@@ -1,4 +1,4 @@
-/* Reset and Fonts */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +16,8 @@ body {
 #hero {
     background-color: #0073e6;
     color: white;
-    padding: 60px 20px;
     text-align: center;
+    padding: 60px 20px;
 }
 
 #hero h1 {
@@ -28,6 +28,17 @@ body {
 #hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+}
+
+.video-placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    margin: 20px auto;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #hero button {
@@ -52,6 +63,8 @@ h2 {
 
 ul {
     list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 ul li {
@@ -66,9 +79,23 @@ blockquote {
     padding: 20px;
     max-width: 600px;
     border-left: 4px solid #0073e6;
+    background-color: #f0f8ff;
 }
 
-/* Purchase Button */
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Call to Action Section */
+#purchase .product-image {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
 #purchase button {
     padding: 10px 20px;
     background-color: #0073e6;
