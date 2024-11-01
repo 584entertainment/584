@@ -1,6 +1,6 @@
 // Function to open the pop-up when the button is clicked
 function openPopup() {
-    document.getElementById("email-popup").style.display = "flex";
+    document.getElementById("email-popup").style.display = "flex"; // Uses flex to center
 }
 
 // Function to close the pop-up when the close button is clicked
