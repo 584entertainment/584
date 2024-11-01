@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
     z-index: 1;
 }
 
@@ -52,6 +52,7 @@ body {
 #hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 #hero button {
@@ -69,93 +70,56 @@ body {
     background-color: #ffdd57;
 }
 
-/* Benefits Section */
-#benefits {
-    max-width: 900px;
-    padding: 40px;
-    background: #ffffff;
-    text-align: center;
-    color: #333333;
-    border-top: 3px solid #3333cc;
-    border-bottom: 3px solid #3333cc;
-    margin-top: -100px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/* Pop-Up Background Overlay */
+#email-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-#benefits h2 {
+/* Pop-Up Content */
+.popup-content {
+    background: #ffffff;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.popup-content h2 {
     font-size: 2rem;
     color: #3333cc;
-    margin-bottom: 20px;
-}
-
-#benefits ul {
-    list-style: none;
-    padding: 0;
-}
-
-#benefits ul li {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 10px 0;
-}
-
-/* Email Capture Section */
-#email-capture {
-    max-width: 800px;
-    padding: 40px;
-    text-align: center;
-    background: #3333cc;
-    color: #ffffff;
-    margin-top: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-#email-capture h2 {
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-#email-capture p {
-    font-size: 1.2rem;
+.popup-content p {
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
-#email-capture form {
+#popup-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px;
 }
 
-#email-capture input[type="email"] {
+#popup-form input[type="text"],
+#popup-form input[type="email"] {
     padding: 12px;
     font-size: 1rem;
-    border: none;
     border-radius: 6px;
-    width: 80%;
+    border: 1px solid #cccccc;
+    width: 100%;
 }
 
-#email-capture button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #3333cc;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#email-capture button:hover {
-    background-color: #ffdd57;
-}
-
-#email-capture img {
-    width: 150px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+#po
