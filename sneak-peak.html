@@ -13,30 +13,24 @@
         <div class="hero-content">
             <h1>Transform Your Life with Self-Discipline</h1>
             <p>Download a free sneak peek of *Discipline Unlocked* and start building habits that last.</p>
-            <button onclick="document.getElementById('email-capture-form').scrollIntoView()">Get Your Free Chapter</button>
+            <button onclick="openPopup()">Get Your Free Chapter</button>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section id="benefits">
-        <h2>What You’ll Learn in This Free Chapter</h2>
-        <ul>
-            <li>Insights into self-discipline and habit-building</li>
-            <li>Key techniques to maintain motivation</li>
-            <li>Proven steps to overcome procrastination</li>
-        </ul>
-    </section>
+    <!-- Pop-Up Email Capture Form -->
+    <div id="email-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Get Instant Access to Your Free Chapter</h2>
+            <p>Enter your name and email below to receive your sneak peek of *Discipline Unlocked*.</p>
+            <form id="popup-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Send Me the Free Chapter</button>
+            </form>
+        </div>
+    </div>
 
-    <!-- Email Capture Section with Image -->
-    <section id="email-capture">
-        <h2>Get Instant Access to Your Free Chapter</h2>
-        <p>Sign up below to receive your free preview of *Discipline Unlocked*.</p>
-        <form id="email-capture-form">
-            <input type="email" id="user-email" placeholder="Enter your email address" required>
-            <button type="submit">Get My Free Chapter</button>
-        </form>
-        <img src="book-cover.jpg" alt="Discipline Unlocked Book Cover">
-    </section>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
