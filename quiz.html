@@ -56,7 +56,14 @@
         <button type="submit" id="submit-quiz">See My Results</button>
 
     </form>
-
+<!-- Email Capture Form -->
+<div id="email-capture" style="display: none;">
+    <h3>Enter your email to see your results!</h3>
+    <form id="email-form" onsubmit="return captureEmail(event)">
+        <input type="email" id="user-email" placeholder="Your email address" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
     <script src="quiz.js"></script>
 </body>
 </html>
