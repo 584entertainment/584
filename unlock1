@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discipline Unlocked - Build Life-Changing Habits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Unlock the Power of Self-Discipline to Transform Your Life</h1>
+        <p>Discover the strategies, tools, and mindsets to build unshakeable habits, stay consistent, and create lasting change.</p>
+        <button onclick="location.href='#purchase'">Start Your Journey Now – Only $49</button>
+    </section>
+
+    <!-- What You’ll Learn Section -->
+    <section id="what-youll-learn">
+        <h2>What You’ll Learn</h2>
+        <ul>
+            <li>The psychology of self-discipline: How habits form and why we procrastinate.</li>
+            <li>Goal-setting techniques that stick: Breaking down big ambitions into achievable steps.</li>
+            <li>Habit-building secrets: Practical strategies like habit-stacking and the 1% rule.</li>
+            <li>Overcoming setbacks, maintaining motivation, and tracking progress.</li>
+            <li>Adapting and evolving your habits as life changes.</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Readers Are Saying</h2>
+        <blockquote>
+            <p>"This book helped me finally stick to my goals. I've never felt more motivated!"</p>
+            <cite>— Happy Reader</cite>
+        </blockquote>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="purchase">
+        <h2>Ready to Take Control and Build the Life You Want?</h2>
+        <p>Get <strong>Discipline Unlocked</strong> now and start building life-changing habits.</p>
+        <button onclick="location.href='your-payment-link.com'">Unlock Your Discipline Now – $49</button>
+    </section>
+
+    <footer>
+        <p>© 2023 Discipline Unlocked. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
